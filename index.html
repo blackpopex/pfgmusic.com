@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome - Perfect George Music </title>
+    <link rel="icon" type="image/jpg" href="./img/Logo edited.jpg">
+    <meta name="description" content="Perfect George Music, Talented Gospel Singer, Inspired by God.">
+    <meta name="Author" content="Oki John, Junior Web-Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Div to keep footer at the bottom, and set body width to 80%-->
+
+    <div id="main-container">
+        <!--website content-->
+        <div id="main-content">
+
+            <!--Wrapper for navbar and slideshow-->
+            <div class="header-wrapper-slideshow">
+                <header>
+                    <!--Header-slideshow-section-->
+                    <div class="fx_content_wrappers">
+                    <div class="header-nav-search flex-wrapper">
+                        <a href="index.html" id="logo-brand">
+                            <img src="img/Logo edited (Ps).jpg" alt="PFG Logo">
+                        </a>
+                        <nav id="navbar" class="myNavbar">
+                            <ul>
+                                <button id="openSidebarBtn" onclick="openNav()" class="navbar-toggler" id="hamburger-menu">
+                                <i class="fa fa-bars"></i>
+                                </button>
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li class="dropdown xyz"><a href="#" class="dropbtn">Media <i
+                                class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content media">
+                                        <a href="photos.html">Photos</a>
+                                        <a href="videos.html">Videos</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown kzy"><a href="#" class="dropbtn">Contact <i
+                                class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content contact">
+                                        <a href="booking.html">Bookings</a>
+                                        <a href="contact-us.html">Contact - Us</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!--search and share BTN-->
+                        <div class="search-share-wrapper">
+                            <div class="search-share-container">
+                                <div class="search-container">
+                                    <button id="searchBtn" class="search-btn" onclick="openModal()"><i
+                                    class="fa fa-search"></i></button>
+                                    <div class="modal-search-box" id="myModal-search">
+                                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                                        <div class="search-box-content">
+                                            <form class="form-search" id="form-search">
+                                                <input type="text" name="search" placeholder="Write ...">
+                                                <button type="button" id="search-btn"><i
+                                                        class="fa fa-hand-point-right"></i> Search!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="share-button">
+                                    <span><i class="fa fa-share-alt"></i> Share! </span>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i
+                                            class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--search and share btn ends-->
+                    <!--wrapper for header section ends-->
+
+                    <!--Side Navigation for mobile devices screen width 600px-->
+                    <div class="sideNav" id="mysideNavbar">
+                        <button id="sideNavCBtn" class="sClosebtn" onclick="closeNav()">&times;</button>
+                        <nav class="sideNavbar">
+                            <div class="logo-searchbox-container">
+                                <div class="img-label">
+                                    <img src="./img/Logo edited (Ps).jpg" alt="logo " class="content-inline" />
+                                </div>
+
+                                <div class="search-container-sidenav">
+                                    <hr>
+                                    <form action="action_page.php" class="sideNav-form">
+                                        <input type="text" name="search" placeholder="Search...">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </form>
+                                    <hr>
+
+                                </div>
+                            </div>
+
+                            <div class="sideNav-links">
+                                <ul>
+                                    <li><a href="index.html">
+                                        Home</a></li>
+                                    <li><a href="about.html"> About</a></li>
+                                    <li><a href="event.html" class="active"> Events</a></li>
+                                    <li><button class="sideNav-dropdown-btn"> Media
+                                        <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="photos.html"> <i class="fa fa-images"></i> Photos</a>
+                                            <a href="videos.html"> <i class="fa fa-video"></i> Videos</a>
+                                        </div>
+                                    </li>
+                                    <li><button class="sideNav-dropdown-btn">
+                                        Contact
+                                        <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="booking.html">Bookings</a>
+                                            <a href="contact-us.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="partners.html"> Partners</a></li>
+                                    <li><a href="event.html"> Blog</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="terms-privacy-sidenav">
+                                <hr style="position: relative;">
+                                <ul>
+                                    <li><a href="terms.html"> Terms of Use</a></li> -
+                                    <li><a href="privacy.html"> Privacy
+                                        Policy </a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                </header>
+                <!--slideshow-->
+                <div id="first-slideshow">
+                    <div class="container-holding">
+                        <div class="slideshow-img">
+
+                            <div><img src="./img/pix/slideshow photos/slideshow 1-web1080x1920U100.jpg" style="width: 100%; height: 100%;"></div>
+
+                            <div><img src="./img/pix/slideshow photos/slideshow 2-web1080x1920U100.jpg" style="width: 100%; height: 100%;"></div>
+                            <div><img src="./img/pix/slideshow photos/slideshow 3-web1080x1920U100.jpg" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="slider-btn">
+                            <span class="prev position-top"><i class="fa fa-chevron-left"></i></span>
+                            <span class="next position-top right-0"><i class="fa fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!--slideshow ends-->
+            </div>
+
+            <!--wrapper ends-->
+            <!-- main-body-content wrapper for the webpage content index page-->
+
+            <div class="main-body-content">
+                <!--Section 1-->
+
+                <article id="section-one" class="first-section" data-aos="fade-up">
+                    <div class="content_wrappers">
+                    <div class="row">
+                        <!--paragraphs for index page section one-->
+                        <h1 class="heading">Welcome to my homepage</h1>
+                        <div class="col-s-12 col-12 section-one-content" id="special-para">
+                            <p>
+                                Man and music have a very strong relationship that has existed long before development and industrialization - the new age. Music is found in every culture and tradition of man, even in the most remote locations, civilization, traditions and cultures
+                                that are long gone and forgotten. Music over the years has played a fundamental role in education, culture, religion, creating awareness, business, relaxation; the list goes on and on because the application of music is
+                                quite endless especially in this current times.
+                            </p>
+
+
+
+                            <div>
+                                music, however creates an atmosphere that enables us connect to God, an atmosphere that enables the move of God in ways that cannot be imagined. Christians all over the world have a strong attachment to music; in fact, most Christian gatherings will not
+                                be complete without a form of music. <span id="dots">[...]</span><span id="moreText"> The role and importance of music in the life of every believer cannot be over emphasized because almost every aspect of our meetings and life in general is characterized by one form of music or the other.
+                                <p>
+                                    I like to believe that all humans are musical beings, we are all musical, we wake with it and sleep with it, we relax with it and work with it, we learn with it and teach with it, we sell and buy it; so music is essential to our optimal function as humans. Gospel music is composed and performed for many purposes, including aesthetic pleasure, religious or ceremonial purposes, and as an entertainment product for the marketplace. Gospel music usually has dominant vocals (often with strong use of harmony) with Christian lyrics. Gospel music can be traced to the early 17th century with roots in the black oral tradition.
+                                </p>
+
+                                <p> At Perfect George Music, we understand the energy, strength and power that is embedded in music. We understand the negative implication that comes from constantly listening to music that has lyrics embedded with negative words; music with explicit content, violent or hate words.
+
+                                    Over the years, we have been able to study the behavioral patterns in our society based on the kind of lyrical content that they have been exposed to and we have discovered that most people that constantly listen to lyrics with strong sexual undertone, drug abuse approval, violent and hate words tend to think in such manner and as such begin to act or behave in such a way. Most of them end up becoming addicted to living these lifestyles that they have constantly heard or listened to.
+                                </p>
+
+                                <p>
+                                    Based on this understanding, we began to create lyrical content that is deliberately designed to pass the right information to our society because it is actually impossible to take music out from our lives. Perfect George Music is committed to creating music for a specific target audience and that is the Young People in the streets and the Young At Heart, people who may not have any form of attraction for the kind of music played in the churches. Our ministry is designed to create music that present the gospel in such a way that it will attract them.
+                                </p>
+
+                                <p>
+                                    This is why our songs are usually heavily worded and very vibrant, full of energy and power, loaded with positive words that have the ability to transform any mind that pays attention to its content. We choose music as a form of therapy for our society because we understand the level of power and influence it carries.
+                                </p>
+
+                                </span>
+                            </div>
+                            <button id="more-btn" onclick="showMore()" style="margin-top: 8px;">Read More</button>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                </article>
+
+
+                <!--section two audio links-->
+                <section id="audio-tracks" class="audio-tracks section-three" data-aos="fade-up">
+                    <div class="content_wrappers">
+                        <div class="audio-track-containers">
+                    <h2>MUSIC LIBRARY</h2>
+                    <P> My music is not just a sound but a sound that carries strong transformative power with the ability to change the world. I am not a singer, but a minister of the gospel through music. My office is not just to entertain my audience but
+                        to pass a definite message with a strong sense of commitment and power that can cause change while ensuring that my audience is entertained.</P>
+                    <!--audio list of tracks with transparent glass and link to each songs-->
+                    <div class="audio-background-image" id="audio-list">
+                        <div class="background-audio-header audio-tracks">
+                            <div class="row ">
+                                <div class="col-s-12 col-12 audio-main-header ">
+                                    <h3 class="col-s-4 col-4 "> <i class="fa fa-music "></i> Collection </h3>
+
+                                    <div class="col-s-4 col-4 ">
+                                        <div style="width:100%; max-width: 5px; ">
+                                            <div class="mySearch-Box ">
+                                                <input type="text " id="boxmySearch " class="box-mySearch " onkeyup="mySearch() " placeholder="Search library ">
+                                                <button class="Search-box-btn ">
+                                                    <i class="fa fa-search "></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                    <p class="col-s-4 col-4 track-numb ">Number of tracks <span><i
+                                                class="fa fa-long-arrow-right "></i></span> 16</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="audio-bg-image " style="padding: 0; margin: 0; ">
+                            <div class="audio-table " style="overflow-x: auto; ">
+                                <div class="col-s-12 col-12 ">
+                                    <table class="mytable " id="myTable" data-aos="fade-up">
+                                        <tr class="mytable-header ">
+                                            <th class="music-title">Title</th>
+                                            <th class="middle-header">Duration</th>
+                                            <th class="right-align" id="right-align ">Released Date
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/put-your-praise-on-it.html ">Put your praise on it</a>
+                                            </td>
+                                            <td class="center ">6:07</td>
+                                            <td class="right-align ">October 1, 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/sample-your-dance.html ">Sample Your Dance ft. Cici
+                                                    Bella</a>
+                                            </td>
+                                            <td class="center ">3:08</td>
+                                            <td class="right-align ">February 28, 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/so-in-love.html ">So In Love </a></td>
+                                            <td class="center ">5:21</td>
+                                            <td class="right-align ">December 18, 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/plenty-money.html ">Plenty-Money</a></td>
+                                            <td class="center ">3:32</td>
+                                            <td class="right-align ">December 18, 2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/helleluyah-dance.html ">Halleluyah Dance</a></td>
+                                            <td class="center ">3:25</td>
+                                            <td class="right-align ">November 11, 2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/make-you-deh-dance.html ">Make You Deh Dance (feat.
+                                                    XpSilver)</a></td>
+                                            <td class="center ">4:01</td>
+                                            <td class="right-align "> November 5, 2015</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/na-so-e-be.html ">Na So E Be</a></td>
+                                            <td class="center ">4:28</td>
+                                            <td class="right-align ">September 25, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/shout!.html ">Shout!</a></td>
+                                            <td class="center ">3:10</td>
+                                            <td class="right-align ">August, 18, 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/i-give-you-my-life.html ">I Give You My Life</a></td>
+                                            <td class="center ">5:02</td>
+                                            <td class="right-align ">August, 18, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/no-limits.html ">No Limits</a></td>
+                                            <td class="center ">3:13</td>
+                                            <td class="right-align ">August, 18, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/addicted.html ">Addicted</a></td>
+                                            <td class="center ">3:37</td>
+                                            <td class="right-align ">August, 18, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/praise-him.html ">Praise Him</a></td>
+                                            <td class="center ">3:45</td>
+                                            <td class="right-align ">August, 18, 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/my-offering.html ">My Offering</a></td>
+                                            <td class="center ">6:39</td>
+                                            <td class="right-align ">August, 18, 2014</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="audio/do-me-well.html ">Do Me Well</a></td>
+                                            <td class="center ">3:26</td>
+                                            <td class="right-align ">August, 18, 2013</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="audio/baba.html ">Baba</a></td>
+                                            <td class="center ">3:28</td>
+                                            <td class="right-align ">August, 18, 2013</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="audio/speak-the-word.html ">Speak The Word</a></td>
+                                            <td class="center ">2:47</td>
+                                            <td class="right-align ">August, 18, 2013</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <!--featured post from different sections-->
+                <section id="featured-post " data-aos="fade-up">
+                    <div class="content_wrappers">
+                    <div class="featured-post-container">
+                        <!--set width to 80%-->
+                        <h2>FEATURED POST</h2>
+
+                        <div id="post-content ">
+
+                            <!--Post one-->
+                            <div class="row ">
+                                <div class="col-s-3 col-3 post-img-wrap ">
+                                    <div class="post-img ">
+                                        <img src="./img/album photo/IMG-20190306-WA0013.jpg ">
+                                    </div>
+                                </div>
+                                <div class="col-s-9 col-9 post-content-wrap ">
+                                    <div class="post-content ">
+                                        <h3>Sample Your Dance - Now on Amazon & Itunes</h3>
+                                        <p>In this new groovy song, you will feel your feet tapping away beneath you and your head nodding before you know what’s happening. Let all your dance moves come alive in this beat <span id="dots
+                            ">[...]</span><span id="moreText "> laced
+                                            with trendy beats that would keep thumping in your head long before the
+                                            music has stopped.</span>
+                                            <a href="sample-your-dance-itune.html " style="margin-left: 5px; ">Read More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <!--Post two-->
+                            <div class="row ">
+                                <div class="col-s-3 col-3 post-img-wrap ">
+                                    <div class="post-img ">
+                                        <img src="./img/album photo/IMG-20200203-WA0005.jpg ">
+                                    </div>
+                                </div>
+                                <div class="col-s-9 col-9 post-content-wrap ">
+                                    <div class="post-content ">
+                                        <h3>$100 Drum Cover Challenge</h3>
+                                        <p>Put Your Praise On It” by Perfect George feat Pst Onos and The Harp & Bow is a song that teaches you how to practically turn your praise into a weapon of war. You must have wondered why the praise is on “it” and
+                                            not on God, well let me answer the question, <span id="dots ">[...]</span><span id="moreText ">the “It” represents everything in your life that makes you cry
+                                            and worry. Instead of putting your tears, money, worry, and fear on the
+                                            problem, “Put Your Praise On It”, praise
+                                            in the midst of your sickness </span>
+                                            <a href="drum-cover-challenge.html " style="margin-left: 5px; ">Read More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <!--Post three-->
+                            <div class="row ">
+                                <div class="col-s-3 col-3 post-img-wrap ">
+                                    <div class="post-img ">
+                                        <img src="./img/album photo/IMG-20200203-WA0001.jpg ">
+                                    </div>
+                                </div>
+                                <div class="col-s-9 col-9 post-content-wrap ">
+                                    <div class="post-content ">
+                                        <h3>Official Released Video - Put Your Praise on It</h3>
+                                        <p>Put Your Praise On It” by Perfect George feat Pst Onos and The Harp & Bow is a song that teaches you how to practically turn your praise into a weapon of war. You must have wondered why the praise is on “it” and
+                                            not on God, well let me answer the question, <span id="dots ">[...]</span><span id="moreText ">the “It” represents everything in your life that makes you cry
+                                            and worry. Instead of putting your tears, money, worry, and fear on the
+                                            problem, “Put Your Praise On It”, praise
+                                            in the midst of your sickness, pain, fears, sorrows and watch God fight for
+                                            you.</span>
+                                            <a href="put-your-praise-on-it-official-release-video.html " style="margin-left: 5px; ">Read More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    </div>
+    <!--chat box section, get settings from https://convertfox.com-->
+
+
+
+
+
+    <!--footer section-->
+    <footer id="main-footer">
+        <div class="footer">
+            <div class="fx_content_wrappers">
+            <div class="footer-row">
+                <div id="copyright">
+                    <small>
+                    <ul>
+                        <li>
+                            <p>Copywrite &copy; <span id="date"></span> Perfectgeorgemusic.com, All Rights Reserved.</p>
+                        </li>
+                        <li><a href="partners.html">Partners - </a></li>
+                        <li><a href="terms.html">Terms of use -</a></li>
+                        <li><a href="privacy.html">Privacy </a></li>
+                        <li> <span id="pipe" class="hide-pipe"> &#124;</span>
+                           <span style="color: #f5f5f5"> Crafted by </span><a href="http://www.blackpopex.ezyro.com/" target="_blank" class="px-link">Blackpopex</a></li>
+
+                    </ul>
+                </small>
+                </div>
+                <div id="socials">
+                    <ul>
+                        <li><a href="https://www.facebook.com/perfectgeorge/?ref=bookmarks" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/perfectgeorgemusic/" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/perfectgeorge1" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCP_t0MVxFO2AlmMWYCdxvlw?disable_polymer=true" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/perfectgeorge" class="soundcloud" target="_blank"><i
+                                    class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!--link to Javascript files-->
+    <script src="./js/main.js"></script>
+    <!--Javascript for slideshow-->
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./js/slick.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>

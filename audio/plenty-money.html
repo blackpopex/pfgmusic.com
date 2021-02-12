@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfect George Music | Plenty-Money </title>
+    <link rel="icon" type="image/jpg" href="./img/Logo edited.jpg">
+    <meta name="description" content="Perfect George Music, Talented Gospel Singer, Inspired by God.">
+    <meta name="Author" content="Oki John, Junior Web-Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Div to keep footer at the bottom, and set body width to 80%-->
+
+    <div id="main-container">
+        <!--website content-->
+        <div id="main-content">
+            <!--Header section-->
+
+            <div class="header-wrapper-slideshow">
+                <header>
+                    <div class="fx_content_wrappers">
+                    <!--Header-slideshow-section-->
+                    <div class="header-nav-search flex-wrapper">
+                        <a href="index.html" id="logo-brand">
+                            <img src="../img/Logo edited (Ps).jpg" alt="PFG Logo">
+                        </a>
+                        <nav id="navbar" class="myNavbar">
+                            <ul>
+                                <button id="openSidebarBtn" onclick="openNav()" class="navbar-toggler" id="hamburger-menu">
+                                        <i class="fa fa-bars"></i>
+                                    </button>
+                                <li><a href="../index.html" class="active">Home</a></li>
+                                <li><a href="../about.html">About</a></li>
+                                <li><a href="../event.html">Event</a></li>
+                                <li class="dropdown xyz"><a href="#" class="dropbtn">Media <i
+                                        class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content media">
+                                        <a href="../photos.html">Photos</a>
+                                        <a href="../videos.html">Videos</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown kzy "><a href="#" class="dropbtn">Contact <i
+                                        class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content contact">
+                                        <a href="../booking.html">Bookings</a>
+                                        <a href="../contact-us.html">Contact - Us</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--search and share BTN-->
+                        <div class="search-share-wrapper">
+                            <div class="search-share-container">
+                                <div class="search-container">
+                                    <button id="searchBtn" class="search-btn" onclick="openModal()"><i
+                                            class="fa fa-search"></i></button>
+                                    <div class="modal-search-box" id="myModal-search">
+                                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                                        <div class="search-box-content">
+                                            <form class="form-search" id="form-search">
+                                                <input type="text" name="search" placeholder="Write ...">
+                                                <button type="button" id="search-btn"><i
+                                                                class="fa fa-hand-point-right"></i> Search!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="share-button">
+                                    <span><i class="fa fa-share-alt"></i> Share! </span>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i
+                                                    class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--search and share btn ends-->
+                    <!--wrapper for header section ends-->
+
+                    <!--Side Navigation for mobile devices screen width 600px-->
+                    <div class="sideNav" id="mysideNavbar">
+                        <button id="sideNavCBtn" class="sClosebtn" onclick="closeNav()">&times;</button>
+                        <nav class="sideNavbar">
+                            <div class="logo-searchbox-container">
+                                <div class="img-label">
+                                    <img src="../img/Logo edited (Ps).jpg" alt="logo " class="content-inline" />
+                                </div>
+
+
+                                <div class="search-container-sidenav">
+                                    <hr>
+                                    <form action="action_page.php" class="sideNav-form">
+                                        <input type="text" name="search" placeholder="Search...">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </form>
+                                    <hr>
+
+                                </div>
+                            </div>
+
+                            <div class="sideNav-links">
+                                <ul>
+                                    <li><a href="../index.html ">
+                                                Home</a></li>
+                                    <li><a href="../about.html"> About</a></li>
+                                    <li><a href="../event.html"> Events</a></li>
+                                    <li><button class="sideNav-dropdown-btn"> Media
+                                                <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="../photos.html"> <i class="fa fa-images"></i> Photos</a>
+                                            <a href="../videos.html"> <i class="fa fa-video"></i> Videos</a>
+                                        </div>
+                                    </li>
+                                    <li><button class="sideNav-dropdown-btn">
+                                                Contact
+                                                <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="../booking.html">Bookings</a>
+                                            <a href="../contact-us.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="../partners.html"> Partners</a></li>
+                                    <li><a href="../event.html"> Blog</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="terms-privacy-sidenav">
+                                <hr style="position: relative;">
+                                <ul>
+                                    <li><a href="../terms.html"> Terms of Use</a></li> -
+                                    <li><a href="../privacy.html"> Privacy
+                                                Policy </a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    </div>
+                </header>
+            </div>
+
+
+            <!-- main-body-content wrapper for the webpage content index page-->
+
+            <div class="main-body-content">
+                <div class="content_wrappers">
+                <!--heading put your praise on it-->
+
+                <section id="pyponit">
+                    <div class="row">
+                        <div class="pyponit col-s-12 col-12">
+                            <div class="heading">
+                                <h2><span>PLEN</span>TY MONEY </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--about put your praise on it-->
+
+                <article class="pyponit-about">
+                    <div class="row">
+                        <div class="col-s-3 col-3 pin-about">
+                            <ul>
+                                <li>About:</li>
+                            </ul>
+                        </div>
+                        <div class="col-s-9 col-9">
+                            <p> Plenty Money” is a Gospel dance track that is designed to take the Gospel to the streets where the conventional church service cannot hold. It is part of the dream and vision given to a vibrant Gospel music minister designed
+                                for this age and dispensation. Its all about the resources that God is commanding in the hand of believers for the work of the ministry in this age.
+                            </p>
+                        </div>
+                        <div class="col-s-12 col-12">
+                            <div class="pyponit-img">
+                                <div id="music-icon">
+                                    <h2><i class="fa fa-music"></i></h2>
+                                    <marquee style="font-size: 1em; font-weight: 600;">Plenty Money by Perfect George
+                                    </marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!--lyrics put your praise on it-->
+
+                <article id="pyponit-lyrics">
+                    <div class="row">
+                        <div class="col-s-3 col-3 pin-lyrics">
+                            <ul>
+                                <li>Lyrics:</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-s-9 col-9 intro">
+                            <h4>Intro</h4>
+                            <p>My money deh for the millions,<br> Running into billions everybody come see<br> My money deh for the millions<br> Running into billions everybody come see <br> Thank you for making me a billionaire <br> Thank you for making
+                                me a billionaire <br> Baba me I thank you for making me a billionaire ooh<br> Thank you for making me a billionaire <br> As E do for me, E go for you, my God E no deh fail ehh <br>
+                                <br> <br>
+                            </p>
+                        </div>
+                        <!--Song lyrics-->
+                        <div id="song-lyrics">
+                            <div class="row">
+                                <div class="col-s-6">
+                                    <h4>Verse 1</h4>
+                                    <p>Plenty Money oooh <br> Plenty Money oooh <br> Oluwa give me money (Money oooh) <br> E give me plenty to chop (I deh chop ooh) <br> Oluwa make me deh jolly (Jolly oooh)<br> No be lie ooh, this God ooh <br> E no deh change
+                                        I deh tell you <br> No be lie ooh, if you no believe ooh <br> If you want to taste, I say you go see <br> Brother have u seen? <br>
+                                        <br><br>
+                                    </p>
+
+                                    <h4>Chorus</h4>
+                                    <p>Nooo no no no, no no no, no no no ooh <br> Since I was born I have never seen the Lord Changing <br> Changing
+                                        <br> I have never seen the Lord Changing<br>
+                                        <br><br>
+                                    </p>
+
+                                    <h4>Verse 2</h4>
+                                    <p>
+                                        Let me testify (Come and testify)<br> Let me testify (Come and testify) <br> Let me testify (Come and testify) <br> Let me testify (Come and testify) <br> Let me testify (Come and testify) <br> Oluwa change my tory
+                                        (Story oooh) <br> I don begin to deh jand (I deh jand oooh) <br> Oluwa lift me higher (Higher oooh) <br> No be lie ooh, this God ooh E no deh change <br> I deh tell you <br> No be lie ooh, if you no believe ooh
+                                        <br> If you want to taste <br> I say you go see Brother have u seen? <br>
+                                        <br>
+                                        <br>
+
+                                    </p>
+                                    <h4>Chorus</h4>
+                                    <p>Nooo no no no, no no no, no no no ooh <br> Since I was born I have never seen the Lord Changing <br> Changing
+                                        <br> I have never seen the Lord Changing
+                                        <br>
+                                        <br>
+                                    </p>
+
+
+                                </div>
+
+                                <div class="col-s-6 col-6">
+
+                                    <h4>Vamp</h4>
+
+                                    <p style="margin-top: 5px;">
+
+                                        Unchangeable changer (unchangeable changer)<br> Immoveable mover (immoveable mover)<br> Unchangeable changer (unchangeable changer)<br> Immoveable mover (immoveable mover)<br> My guy enter the center (Enter the
+                                        center) <br> Make you begin to deh dance (Begin to deh dance) <br> Because wetin E do (Wetin E do) <br> E do for me (E do for me) <br> E butter my bread oooh eeh <br> And E sugar my tea (E sugar my tea) <br> I say
+                                        wetin E do (Wetin E do) <br> E do for me (E do for me) <br> E butter my bread oooh eeh <br> And E sugar my tea (E sugar my tea)<br> I no go fiti shout (I no go fiti shout) <br> Because E deh heavy for my mouth (E
+                                        deh heavy for my mouth) <br> If you see this kind God oooh <br> Make you deh hail am oooh <br> Igwe! Igwe! lgwe! Igwe! ..<br><br></p>
+                                    <h4>OUTRO</h4><br>
+                                    <p>Odugwu kariri odogwu<br> Odogwu kariri odogwu<br> Agu n’eche mba ooh<br> Odogwu, O dogwu<br> Odogwu, Odogwu<br> Odogwu kariri odogwu<br>
+
+                                        <br>
+                                        <br>
+                                    </p>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---profile photo, social share links and button for download-->
+                    <div id="final-section">
+                        <div class="final-section col-s-12 col-12">
+                            <!--Profile photo and share container-->
+                            <div class="row">
+                                <div class="final-30 col-s-12 col-12">
+                                    <div class="profile-photo-container">
+                                        <img src="../img/George.jpg" alt="profile photo">
+                                    </div>
+                                </div>
+                                <div class="final-70">
+                                    <div class="final-section-content">
+                                        <div class="small-container">
+                                            <h5>Released on October 1, 2019</h5>
+                                            <p>Share this song </p>
+                                        </div>
+                                        <ul>
+
+                                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Container for Audio track-->
+                            <div id="Listen-to">
+                                <div class="Listen-to col-s-12 col-12">
+                                    <ul>
+                                        <li>
+                                            <h5>Listen To:</h5>
+                                        </li>
+                                        <li>
+                                            <p>" Plenty-Money "</p>
+                                        </li>
+                                        <li>
+                                            <a href="../music/Plenty-Money.mp3" download="Plenty-Money" target="_blank" title="Download Song"> <i class="fa fa-download"></i></a>
+                                        </li>
+                                    </ul>
+                                    <p>Voiced by Perfect George</p>
+                                    <div class="contain-audio-player">
+                                        <audio controls style="width: 100%">
+                                            <source src="../music/Plenty-Money.mp3" type="audio/mp3">
+                                        </audio>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+
+                </article>
+
+</div>
+
+
+
+            </div>
+            <!--These two div encloses the main container and main website content-->
+        </div>
+
+
+    </div>
+
+    <!--chat box section, get settings from https://convertfox.com-->
+
+
+    <!--footer section-->
+    <footer id="main-footer">
+        <div class="footer">
+            <div class="fx_content_wrappers">
+            <div class="footer-row">
+                <div id="copyright">
+                    <small>
+                    <ul>
+                        <li>
+                            <p>Copywrite &copy; <span id="date"></span> Perfectgeorgemusic.com, All Rights Reserved.</p>
+                        </li>
+                        <li><a href="../partners.html">Partners - </a></li>
+                        <li><a href="../terms.html">Terms of use -</a></li>
+                        <li><a href="../privacy.html">Privacy </a></li>
+                        <li> <span id="pipe" class="hide-pipe"> &#124;</span>
+                           <span style="color: #f5f5f5"> Crafted by </span><a href="http://www.blackpopex.ezyro.com/" target="_blank" class="px-link">Blackpopex</a></li>
+
+                    </ul>
+                </small>
+                </div>
+                <div id="socials">
+                    <ul>
+                        <li><a href="https://www.facebook.com/perfectgeorge/?ref=bookmarks" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/perfectgeorgemusic/" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/perfectgeorge1" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCP_t0MVxFO2AlmMWYCdxvlw?disable_polymer=true" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/perfectgeorge" class="soundcloud" target="_blank"><i
+                                    class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!--link to Javascript files-->
+
+    <script src="../js/main.js"></script>
+    <!--Javascript for slideshow-->
+    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/slick.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>

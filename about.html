@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About - Perfect George Music</title>
+    <link rel="icon" type="image/jpg" href="./img/Logo edited.jpg">
+    <meta name="description" content="Perfect George Music, Talented Gospel Singer, Inspired by God.">
+    <meta name="Author" content="Oki John, Junior Web-Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Div to keep footer at the bottom, and set body width to 80%-->
+
+    <div id="main-container">
+        <!--website content-->
+        <div id="main-content">
+            <!--Header section-->
+
+            <!--Wrapper for navbar and slideshow-->
+            <div class="header-wrapper-slideshow">
+                <header>
+                    <div class="fx_content_wrappers">
+                    <!--Header-slideshow-section-->
+                    <div class="header-nav-search flex-wrapper">
+                        <a href="index.html" id="logo-brand">
+                            <img src="img/Logo edited (Ps).jpg" alt="PFG Logo">
+                        </a>
+                        <nav id="navbar" class="myNavbar">
+                            <ul>
+                                <button id="openSidebarBtn" onclick="openNav()" class="navbar-toggler" id="hamburger-menu">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html" class="active">About</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li class="dropdown xyz"><a href="#" class="dropbtn">Media <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content media">
+                                        <a href="photos.html">Photos</a>
+                                        <a href="videos.html">Videos</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown kzy "><a href="#" class="dropbtn">Contact <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content contact">
+                                        <a href="booking.html">Bookings</a>
+                                        <a href="contact-us.html">Contact - Us</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--search and share BTN-->
+                        <div class="search-share-wrapper">
+                            <div class="search-share-container">
+                                <div class="search-container">
+                                    <button id="searchBtn" class="search-btn" onclick="openModal()"><i
+                                                class="fa fa-search"></i></button>
+                                    <div class="modal-search-box" id="myModal-search">
+                                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                                        <div class="search-box-content">
+                                            <form class="form-search" id="form-search">
+                                                <input type="text" name="search" placeholder="Write ...">
+                                                <button type="button" id="search-btn"><i
+                                                                    class="fa fa-hand-point-right"></i> Search!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="share-button">
+                                    <span><i class="fa fa-share-alt"></i> Share! </span>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i
+                                                        class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--search and share btn ends-->
+                    <!--wrapper for header section ends-->
+
+                    <!--Side Navigation for mobile devices screen width 600px-->
+                    <div class="sideNav" id="mysideNavbar">
+                        <button id="sideNavCBtn" class="sClosebtn" onclick="closeNav()">&times;</button>
+                        <nav class="sideNavbar">
+                            <div class="logo-searchbox-container">
+                                <div class="img-label">
+                                    <img src="./img/Logo edited (Ps).jpg" alt="logo " class="content-inline" />
+                                </div>
+
+                                <div class="search-container-sidenav">
+                                    <hr>
+                                    <form action="action_page.php" class="sideNav-form">
+                                        <input type="text" name="search" placeholder="Search...">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </form>
+                                    <hr>
+
+                                </div>
+                            </div>
+
+                            <div class="sideNav-links">
+                                <ul>
+                                    <li><a href="index.html">
+                                                    Home</a></li>
+                                    <li><a href="about.html" class="active"> About</a></li>
+                                    <li><a href="event.html"> Events</a></li>
+                                    <li><button class="sideNav-dropdown-btn"> Media
+                                                    <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="photos.html"> <i class="fa fa-images"></i> Photos</a>
+                                            <a href="videos.html"> <i class="fa fa-video"></i> Videos</a>
+                                        </div>
+                                    </li>
+                                    <li><button class="sideNav-dropdown-btn">
+                                                    Contact
+                                                    <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="booking.html">Bookings</a>
+                                            <a href="contact-us.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="partners.html"> Partners</a></li>
+                                    <li><a href="event.html"> Blog</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="terms-privacy-sidenav">
+                                <hr style="position: relative;">
+                                <ul>
+                                    <li><a href="terms.html"> Terms of Use</a></li> -
+                                    <li><a href="privacy.html"> Privacy
+                                                    Policy </a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                </header>
+            </div>
+
+            <!-- main-body-content wrapper for the webpage content index page-->
+
+            <div class="abt-main">
+                <!--about Section set width to 90%-->
+
+                <section id="about" class="about">
+                    
+                    <div class="row">
+                        <!--heading section mystory-->
+                        <div class="mystory col-s-12 col-12">
+                            <h1 class="heading">MY STORY</h1>
+                            <div id="subheading">
+                                <h3>My Life And Journey In The Music Industry</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-s-12 col-12" style="padding: 0;">
+                            <div class="content_wrappers">
+                            <div class="about-paragraph" data-aos="fade-up">
+                                <p>
+                                    <b>George Aham</b> best known as <i>Perfect George</i> is a multi skilled and exceptionally anointed gospel music artist currently serving in House On The Rock Warri with a strong passion to reach out to young men and
+                                    women in the street, who may not have any form of attraction for the kind of music done in the church. His ministry is to reach out to them on the streets brothels, hotels, club houses etc with the kind of music that
+                                    they understand.Born on December 18th into a family of 5 children, he hails from a Isuochi in Umunneochi L.G.A, Abia State.
+                                </p>
+                                <p>Over the years, Perfect George has continued to impact his audience and generation at large with the Gospel our Lord Jesus through music. He released his first single "Baba" in December 2012, followed by "Do Me Well" 2013.
+                                    This project eventually evolved to an album "No Limits" released in 2014. Currently Perfect George has 18 tracks to his credit.
+                                </p>
+                            </div>
+                        </div>
+
+                            <div class="grayscale">
+                                <div class="parallax">
+                                </div>
+                            </div>
+                            <div class="about-paragraph" data-aos="fade-up">
+                                <div class="content_wrappers">
+                                
+                                <p>Perfect George is the C.E.O and founder of Perfect George Group with Perfect George Music, SpinDaHit Records, Crusaders Of Praise and P.G Reset as a subsidiary. His ministry is characterized by highly energetic, lively
+                                    and heavy worded songs that keeps his listeners on their feet and longing for more of God. He is a passionate lover of God.</p>
+                                <p>As he continues to make heartfelt and spirit - filled music, a task he intends to pursue for a very long in reaching the unsaved and bridging the gap between the gospel as we know it and entertainment-a tool he is fashioning
+                                    in line with the scriptures and contemporary trends, Perfect George prospering his will on earth, as it is in heaven.
+                                </p>
+                                </div>
+                            </div>
+                            <div class="parallax-2">
+                            </div>
+                            <div class="keystatement-paragraph" data-aos="fade-up">
+                                <div class="content_wrappers">
+                                <div class="wrapper">
+                                    <h2>KEY STATEMENTS</h2>
+                                    <div class="content">
+                                        <div>
+                                            <h3><i class="fa fa-angle-right"></i> Vision Statement: </h3>
+                                            <p>To Minister, entertain and ultimately transform the young and the world at large through music.</p>
+                                        </div>
+
+                                        <div>
+                                            <h3><i class="fa fa-angle-right"></i> Mission Statement: </h3>
+                                            <p>To deliberately & consistently create & publish musical materials that is powerful enough to be tools of transformation.</p>
+                                        </div>
+
+                                        <div>
+                                            <h3><i class="fa fa-angle-right"></i> Core Values: </h3>
+                                            <p>Transformation, Ministration, Entertainment, Excellence, Innovation, Social impact and Global reach. </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+
+
+
+            </div>
+            <!--These two div encloses the main container and main website content-->
+        </div>
+
+
+    </div>
+
+    <!--chat box section, get settings from https://convertfox.com-->
+
+
+
+
+
+    <!--footer section-->
+    <footer id="main-footer">
+        <div class="footer">
+            <div class="fx_content_wrappers">
+            <div class="footer-row">
+                <div id="copyright">
+                    <small>
+                    <ul>
+                        <li>
+                            <p>Copywrite &copy; <span id="date"></span> Perfectgeorgemusic.com, All Rights Reserved.</p>
+                        </li>
+                        <li><a href="partners.html">Partners - </a></li>
+                        <li><a href="terms.html">Terms of use -</a></li>
+                        <li><a href="privacy.html">Privacy </a></li>
+                        <li> <span id="pipe" class="hide-pipe"> &#124;</span>
+                           <span style="color: #f5f5f5"> Crafted by </span><a href="http://www.blackpopex.ezyro.com/" target="_blank" class="px-link">Blackpopex</a></li>
+
+                    </ul>
+                </small>
+                </div>
+                <div id="socials">
+                    <ul>
+                        <li><a href="https://www.facebook.com/perfectgeorge/?ref=bookmarks" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/perfectgeorgemusic/" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/perfectgeorge1" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCP_t0MVxFO2AlmMWYCdxvlw?disable_polymer=true" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/perfectgeorge" class="soundcloud" target="_blank"><i
+                                    class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!--link to Javascript files-->
+
+    <script src="./js/main.js"></script>
+    <!--Javascript for slideshow-->
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./js/slick.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

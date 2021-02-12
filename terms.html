@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfect George Music | Partners </title>
+    <link rel="icon" type="image/jpg" href="./img/Logo edited.jpg">
+    <meta name="description" content="Perfect George Music, Talented Gospel Singer, Inspired by God.">
+    <meta name="Author" content="Oki John, Junior Web-Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--Div to keep footer at the bottom, and set body width to 80%-->
+
+    <div id="main-container">
+        <!--website content-->
+        <div id="main-content">
+            <!--Header section-->
+
+            <!--Wrapper for navbar and slideshow-->
+            <div class="header-wrapper-slideshow">
+                <header>
+                    <div class="fx_content_wrappers">
+                    <!--Header-slideshow-section-->
+                    <div class="header-nav-search flex-wrapper">
+                        <a href="index.html" id="logo-brand">
+                            <img src="img/Logo edited (Ps).jpg" alt="PFG Logo">
+                        </a>
+                        <nav id="navbar" class="myNavbar">
+                            <ul>
+                                <button id="openSidebarBtn" onclick="openNav()" class="navbar-toggler" id="hamburger-menu">
+                                        <i class="fa fa-bars"></i>
+                                    </button>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li class="dropdown xyz"><a href="#" class="dropbtn">Media <i
+                                        class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content media">
+                                        <a href="photos.html">Photos</a>
+                                        <a href="videos.html">Videos</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown kzy "><a href="#" class="dropbtn">Contact <i
+                                        class="fa fa-angle-down"></i></a>
+                                    <div class="dropdown-content contact">
+                                        <a href="booking.html">Bookings</a>
+                                        <a href="contact-us.html">Contact - Us</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--search and share BTN-->
+                        <div class="search-share-wrapper">
+                            <div class="search-share-container">
+                                <div class="search-container">
+                                    <button id="searchBtn" class="search-btn" onclick="openModal()"><i
+                                            class="fa fa-search"></i></button>
+                                    <div class="modal-search-box" id="myModal-search">
+                                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                                        <div class="search-box-content">
+                                            <form class="form-search" id="form-search">
+                                                <input type="text" name="search" placeholder="Write ...">
+                                                <button type="button" id="search-btn"><i
+                                                                class="fa fa-hand-point-right"></i> Search!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="share-button">
+                                    <span><i class="fa fa-share-alt"></i> Share! </span>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i
+                                                    class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--search and share btn ends-->
+                    <!--wrapper for header section ends-->
+
+                    <!--Side Navigation for mobile devices screen width 600px-->
+                    <div class="sideNav" id="mysideNavbar">
+                        <button id="sideNavCBtn" class="sClosebtn" onclick="closeNav()">&times;</button>
+                        <nav class="sideNavbar">
+                            <div class="logo-searchbox-container">
+                                <div class="img-label">
+                                    <img src="./img/Logo edited (Ps).jpg" alt="logo " class="content-inline" />
+                                </div>
+
+                                <div class="search-container-sidenav">
+                                    <hr>
+                                    <form action="action_page.php" class="sideNav-form">
+                                        <input type="text" name="search" placeholder="Search...">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </form>
+                                    <hr>
+
+                                </div>
+                            </div>
+
+                            <div class="sideNav-links">
+                                <ul>
+                                    <li><a href="index.html ">
+                                                Home</a></li>
+                                    <li><a href="about.html"> About</a></li>
+                                    <li><a href="event.html"> Events</a></li>
+                                    <li><button class="sideNav-dropdown-btn"> Media
+                                                <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="photos.html"> <i class="fa fa-images"></i> Photos</a>
+                                            <a href="videos.html"> <i class="fa fa-video"></i> Videos</a>
+                                        </div>
+                                    </li>
+                                    <li><button class="sideNav-dropdown-btn">
+                                                Contact
+                                                <i class="fa fa-fw fa-angle-down"></i></button>
+                                        <div class="sideNav-dropdown-content displayblock" id="sideNav-dropdown">
+                                            <a href="booking.html">Bookings</a>
+                                            <a href="contact-us.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="partners.html"> Partners</a></li>
+                                    <li><a href="event.html"> Blog</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="terms-privacy-sidenav">
+                                <hr style="position: relative;">
+                                <ul>
+                                    <li><a href="terms.html"> Terms of Use</a></li> -
+                                    <li><a href="privacy.html"> Privacy
+                                                Policy </a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                </header>
+            </div>
+            <!-- main-body-content wrapper for the webpage content index page-->
+
+            <div class="main-body-content">
+
+                <!--terms of use 90% width-->
+
+                <section id="terms-of-use" data-aos="fade-up">
+                    <div class="content_wrappers">
+                    <div class="terms-of-use-content">
+                        <div class="row">
+                            <h1>Terms of Use</h1>
+                            <div class="col-s-12 col-12 terms terms-section-one">
+
+                                <h4>Terms and Condition</h4>
+                                <p>As part of our commitment towards ensuring that you have the best of experience here @ <a href="index.html"> www.perfectgeorgemusic.com</a> (the "Web Site" or the "Site"), and to ensure a clear understanding of the relationship
+                                    arising from your use of our Site, we have created a Terms and Conditions of Use. The idea behind providing these set of information or rules and regulation guiding to the use of this site is to ensure you do not take
+                                    undue advantage of the materials provided in this site and that we do not take your presence in our site for granted.</p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-two">
+                                <h4>Terms and Conditions of Use</h4>
+                                <p style="color: #2b4969;">PLEASE REVIEW THESE TERMS AND CONDITIONS OF USE CAREFULLY BEFORE USING THIS SITE.</p>
+                                <p>These Terms and Conditions of Use ("Terms and Conditions") constitute the contractual agreement between you and <b>Perfectgeorgemusic</b> regarding your use of our Site and any activities or transactions you may conduct
+                                    through the Site. In these Terms and Conditions, the words "you" and "your" refer to any person accessing the Site, and the words "we," "us," and "our" refer to
+                                    <b>Perfectgeorgemusic.</b></p>
+                                <p>By using our Site, you agree to these Terms and Conditions.</p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-three">
+                                <h4>Overview</h4>
+                                <p>We have organized the elements of our Terms and Conditions in sections. If after reading through these Terms and Conditions you still have questions, please feel free to contact us by clicking on the following link: contact
+                                    us. </p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-four">
+                                <h4>Ownership Of Site Contents</h4>
+                                <p>Unless otherwise noted, all text, images, illustrations, designs, icons, photographs, video clips, sound clips, and other materials that are part of this Site (collectively, the "Contents"), are copyrighted works, trademarks,
+                                    trade dress, or other intellectual properties owned, controlled, or licensed by
+                                    <b>Perfectgeorgemusic</b> (or used in accordance with "fair use" principles). The Site as a whole is protected by copyright and trade dress, all worldwide right, title and interest in and to which is owned by
+                                    <b>Perfectgeorgemusic.</b> </p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-five">
+                                <h4>Downloading and Use of Site Contents</h4>
+                                <p>The Contents of our Site, and the Site as a whole, are intended strictly for the purpose of providing information about Perfect George Music. You may download and copy the Contents displayed on the Site solely for such
+                                    Permitted Uses, and provided that you do not remove any copyright or other proprietary notices contained on the materials. No right, title, or interest in any downloaded materials or software is transferred to you as
+                                    a result of any such downloading or copying. You may not reproduce (except as provided above), modify, publish, distribute, sell, or exploit in any way, in whole or in part, any of the Contents, the Site, or any related
+                                    software. Use of the Content or any related software which is not expressly permitted by these Terms and Conditions constitutes a breach of these Terms and Conditions, and may also constitute a violation of copyright,
+                                    trademark, and other law. </p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-six">
+                                <h4>Prohibited Uses </h4>
+                                <p>In addition to other prohibited uses specified in these Terms and Conditions, you are expressly prohibited from using our Site to post or transmit any advertising, "spam," threatening, defamatory, profane, obscene, scandalous,
+                                    or inflammatory material, or any material that could constitute or encourage conduct that would be considered a criminal offense, give rise to civil liability, or otherwise violate any law. <b>Perfectgeorgemusic</b>                                    disclaims all responsibility or liability arising from the content of any such postings, and assumes no responsibility for any error, omission, defamation, falsehood, profanity, obscenity, or threat contained in any
+                                    information posted on the Site or transmitted through the Site. As provided in our Privacy Policy, <b>Perfectgeorgemusic</b> will comply with court orders directing
+                                    <b>Perfectgeorgemusic</b> to disclose the identity of users posting such information or materials, or otherwise directing compliance by
+                                    <b>Perfectgeorgemusic.</b> You agree to refrain from undertaking any activity that imposes an unreasonable or disproportionate load on the Site. In addition, you may not use any hardware, software, or routines, including
+                                    but not limited to any viruses, "bots," or other devices intended to interrupt or harm the workings of the Site, and agree to refrain from any attempt to intercept, access or monitor any system, data, or information
+                                    on or in transit to or from the Site. </p>
+                            </div>
+
+                            <div class="col-s-12 col-12 terms terms-section-seven">
+                                <h4> Complete Agreement</h4>
+                                <p>In addition to these Terms and Conditions (and Subscription Agreement, if any), your use of our Site is also subject to our Privacy Policy. Together with our Privacy Policy, these Terms and Conditions (and Subscription
+                                    Agreement, if any) constitute the entire agreement between you and
+                                    <b>Perfectgeorgemusic</b> with respect to use of the Site and supersede any and all prior representations and agreements, oral or written, relating to the subject matter hereof. </p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-eight">
+                                <h4> Your Consent </h4>
+                                <p>By using our Web Site, you agree to comply with, and be bound by these Terms and Conditions. If you do not agree with some, or all of these Terms and Conditions, please refrain from visiting our Site. </p>
+                            </div>
+                            <div class="col-s-12 col-12 terms terms-section-ten">
+                                <h4> Contact Us </h4>
+                                <p>You may contact us for any complaints, enquiry and request via the under listed channels
+                                    <ul>
+                                        <li>info@perfectgoergemusic.com,</li>
+                                        <li>imusic@perfectgeorgemusic.com</li>
+                                        <li>+234 - 8068 - 72455</li>
+                                    </ul>
+                                </p>
+                                <p>Thank you for using Perfect George Website!</p>
+                                <p>Last Updated: February 14, 2020 </p>
+                                <p>Copywrite &copy; 2020 Perfect George Productions.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+
+
+
+
+
+            </div>
+            <!--These two div encloses the main container and main website content-->
+        </div>
+
+
+    </div>
+
+    <!--chat box section, get settings from https://convertfox.com-->
+
+
+    <!--footer section-->
+    <footer id="main-footer">
+        <div class="footer">
+            <div class="fx_content_wrappers">
+            <div class="footer-row">
+                <div id="copyright">
+                    <small>
+                    <ul>
+                        <li>
+                            <p>Copywrite &copy; <span id="date"></span> Perfectgeorgemusic.com, All Rights Reserved.</p>
+                        </li>
+                        <li><a href="partners.html">Partners - </a></li>
+                        <li><a href="terms.html">Terms of use -</a></li>
+                        <li><a href="privacy.html">Privacy </a></li>
+                        <li> <span id="pipe" class="hide-pipe"> &#124;</span>
+                           <span style="color: #f5f5f5"> Crafted by </span><a href="http://www.blackpopex.ezyro.com/" target="_blank" class="px-link">Blackpopex</a></li>
+
+                    </ul>
+                </small>
+                </div>
+                <div id="socials">
+                    <ul>
+                        <li><a href="https://www.facebook.com/perfectgeorge/?ref=bookmarks" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/perfectgeorgemusic/" class="instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/perfectgeorge1" class="twitter" target="_blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCP_t0MVxFO2AlmMWYCdxvlw?disable_polymer=true" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://soundcloud.com/perfectgeorge" class="soundcloud" target="_blank"><i
+                                    class="fa fa-soundcloud"></i></a></li>
+                        <li><a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!--link to Javascript files-->
+    <script src="./js/main.js"></script>
+    <!--Javascript for slideshow-->
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./js/slick.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>
