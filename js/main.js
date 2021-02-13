@@ -107,7 +107,7 @@ for (i = 0; i < dropbtn.length; i++) {
 //Open sidenav when the hamburger-menu bar is clicked 
 
 function openNav() {
-    document.getElementById("mysideNavbar").style.width = "200px";
+    document.getElementById("mysideNavbar").style.width = "250px";
     document.getElementById("mysideNavbar").style.opacity = "1";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
