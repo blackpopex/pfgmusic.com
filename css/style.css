@@ -1908,11 +1908,7 @@ header {
 /*audio list settings**/
 
 .audio-background-image {
-  background-image: linear-gradient(
-      rgba(139, 137, 137, 0.4),
-      rgba(134, 133, 133, 0.9)
-    ),
-    url('../img/audio\ background/pexels-kaboompics-com-6320.jpg');
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../img/pix/george1-web2640x3960U100.jpg');
   background-position: 0 50px;
   background-repeat: no-repeat;
   height: 100%;
