@@ -2137,6 +2137,9 @@ td a:hover {
     margin: 5% auto;
     padding: 5px 20px;
   }
+  .audio-background-image {
+   background-position: center;
+    }
   .audio-background-image .mySearch-Box {
     display: none;
   }
@@ -2240,7 +2243,7 @@ td a:hover {
   }
   .background-audio-header {
     background-color: #36516e;
-    height: 6vh;
+    height: 10vh;
     position: relative;
     overflow: hidden;
   }
