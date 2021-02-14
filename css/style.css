@@ -2243,20 +2243,13 @@ td a:hover {
   }
   .background-audio-header {
     background-color: #36516e;
-    height: 2vh;
+    height: 7vh;
     position: relative;
     overflow: hidden;
   }
   /**menu search box **/
   .mySearch-Box:hover > .box-mySearch {
     width: 200px;
-  }
-}
-@media screen and (max-width: 812px) and (orientation: landscape) {
-  .background-audio-header {
-    height: 5vh;
-    position: relative;
-    overflow: hidden;
   }
 }
 
