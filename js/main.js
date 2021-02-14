@@ -91,10 +91,10 @@ function mySearch() {
 
 //controls dropdown-menu on side navigation bar//
 
-var dpt = document.getElementsByClassName("sideNav-dropdown-btn");
+var dropbtn = document.getElementsByClassName("sideNav-dropdown-btn");
 var i;
-for (i = 0; i < dpt.length; i++) {
-    dpt[i].addEventListener("click", function () {
+for (i = 0; i < dropbtn.length; i++) {
+    dropbtn[i].addEventListener("click", function () {
         this.classList.toggle('active');
         var dropContent = this.nextElementSibling;
         if (dropContent.style.display === "block") {
