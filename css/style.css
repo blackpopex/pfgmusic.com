@@ -2015,6 +2015,12 @@ td a:hover {
   text-decoration: underline;
 }
 
+.audio-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .audio-main-header h3,
 .audio-main-header .mySearch-Box {
   position: relative;
@@ -2065,12 +2071,14 @@ td a:hover {
 .background-audio-header p {
   float: right;
   color: #f9d37d;
-  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
   line-height: 4vh;
   margin: 0;
   padding: 0;
-  margin-top: -10px;
-  padding-right: 20px;
+  margin-top: -14px;
+  padding-right: 10px;
   text-align: right;
 }
 
@@ -2226,6 +2234,13 @@ td a:hover {
   /**menu search box **/
   .mySearch-Box:hover > .box-mySearch {
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  .background-audio-header p {
+    line-height: 4vh;
+    margin-top: -25px;
   }
 }
 
