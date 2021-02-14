@@ -2243,7 +2243,7 @@ td a:hover {
   }
   .background-audio-header {
     background-color: #36516e;
-    height: 8vh;
+    height: 6vh;
     position: relative;
     overflow: hidden;
   }
@@ -2254,7 +2254,7 @@ td a:hover {
 }
 @media only screen and (min-width: 812px) and (orientation: landscape) {
    .background-audio-header {
-    height: 12vh;
+    height: 14vh;
     position: relative;
     overflow: hidden;
   }
